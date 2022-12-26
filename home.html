@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Responsive Website</title>
 </head>
@@ -20,8 +21,8 @@
     <section class="header">
         <nav>
             <a href="home.html"><img src="images/logo.png" alt=""></a>
-            <div class="nav-links">
-                <i class="fa fa-times-circle-o"></i>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times-circle-o" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -30,7 +31,7 @@
                     <li><a href="">contact</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
         <div class="text">
             <h1>World's Biggest university</h1>
@@ -39,6 +40,17 @@
             <a class="text-btn" href="">Visit us to know more</a>
         </div>
     </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navlinks= document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right="0";
+        }
+        function hidemenu(){
+            navlinks.style.right="-150px";
+        }
+    </script>
 </body>
 
 </html>
