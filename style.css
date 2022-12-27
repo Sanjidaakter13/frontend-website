@@ -119,3 +119,61 @@ nav .fa{
         padding:25px;
     }
 }
+
+/* course */
+.course{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding:100px;
+}
+
+ h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.course p{
+    font-size: 14px;
+    font-weight:300;
+    color:#777;
+    line-height:22px;
+    padding: 10px;
+}
+
+.course .row{
+    display:flex;
+    margin-top: 5%;
+}
+
+.course-col{
+    background-color: #fff3f3;
+    margin: 5px 15px 60px 15px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col h3{
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:700px){
+    .course .row{
+        flex-direction: column;
+    }
+}
+
+/* Campus */
+.campus{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+}
